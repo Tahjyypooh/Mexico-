@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />  
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div id="banner">
+      <h1><b>Welcome to Mexico<b/></h1>
+      <p>Travelers WildWorld<p>
+    </div>
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="food.html">Food</a>
+      <a href="atttractions.html">Attractions</a>
+	  <a href="gallery.html">Gallery</a>
+    </nav>
+	
+	<div class="container">
+	  <div style="flex:1">
+		<p style="color:white; font-style:italic; text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;">
+		  With its amazing springtime environment, remarkable light, stunning architecture, excellent handicraft shopping, and popular art classes, this Mexican treasure has it all. One of Mexico's top destinations for creative types is San Miguel de Allende, which has a high gallery-to-resident ratio.
+
+		  Since the first art institute opened in a converted convent in the 1930s, the cobblestone city has been attracting retirees and captivating artists.
+
+		  Later, in the 1960s, it attracted Neal Cassady, Allen Ginsberg, and Jack Kerouac, who came to read, write, and drink poetry (the last remained there until his death).
+
+		  Today, San Miguel de Allende has a sepia-toned postcard feel to it, with its tiny, sloping streets lined with cafes and businesses that hang rainbow ribbons from wrought iron window bars.
+		</p>
+	  </div>
+	  <div style="flex:1">
+	  <p style="color:white; font-style:italic; text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;">
+	  Mexico,officially the United Mexican States, is a country in the southern portion of North America. Covering 1,972,550 km2 (761,610 sq mi), it is the world's 13th largest country by area; with a population of almost 130 million, it is the 10th most populous country and has the most Spanish speakers in the world. Mexico is a constitutional republic comprising 31 states and Mexico City, its capital and largest city, which is among the world's most populous metropolitan areas. The country borders the United States to the north; as well as Guatemala and Belize to the southeast. It has maritime borders with the Pacific Ocean to the west, the Caribbean Sea to the southeast, and the Gulf of Mexico to the east.
+       </p>
+	  </div>
+	</div>
+	
+	
+    <div id="main">
+      <div>
+        
+        <!-- Inline CSS is in the element.  It is an attribute -->
+     
+      </div>  
+    </div>
+	
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="slideshow image1.jpg" style="width:100%">
+    <div class="text">Monterrey, Nuevo Leon</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="slideshow image2.jpg" style="width:100%">
+    <div class="text">Mexico City</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="slideshow image3.jpg" style="width:100%">
+    <div class="text"> Merida, Yucatan</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="slideshow image4.jpg" style="width:100%">
+    <div class="text">San Miguel de Allende, Guanajuato</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<p style="color:white;font-style:italic;"><iframe width="560" height="315" src="https://www.youtube.com/embed/_gWGwPp09CA?si=JTyVm3JK93GioG5r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<a href="food.html">Food</a>
+
+
+  </body>
+  	<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+	</script
+</html>
